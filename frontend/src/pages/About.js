@@ -1,7 +1,17 @@
 import React from 'react'
 
-function Home() {
-    return <div>-about placeholder-</div>
+import { Banner } from '../components/shared'
+import { Member, Mission, Value } from '../components/about'
+
+function About() {
+    return (
+        <div>
+            <Banner />
+            <Mission />
+            <Value />
+            <Member />
+        </div>
+    )
 }
 
-export default Home
+export default About

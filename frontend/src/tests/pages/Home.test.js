@@ -4,6 +4,6 @@ import { Home } from '../../pages'
 
 test('renders home placeholder', () => {
     render(<Home />)
-    const linkElement = screen.getByText('-home placeholder-')
+    const linkElement = screen.getByText('-home page placeholder-')
     expect(linkElement).toBeInTheDocument()
 })

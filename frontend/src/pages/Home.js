@@ -1,7 +1,16 @@
 import React from 'react'
 
+import { Banner, About, Project, Apply } from '../components/home'
+
 function Home() {
-    return <div>-home placeholder-</div>
+    return (
+        <div>
+            <Banner />
+            <About />
+            <Project />
+            <Apply />
+        </div>
+    )
 }
 
 export default Home

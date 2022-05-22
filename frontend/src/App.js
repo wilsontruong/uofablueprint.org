@@ -1,12 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
+import { Header, Footer } from './components/shared'
+
 function App() {
     return (
         <div>
-            <header>-header placeholder-</header>
+            <Header />
             <Outlet />
-            <footer>-footer placeholder-</footer>
+            <Footer />
         </div>
     )
 }

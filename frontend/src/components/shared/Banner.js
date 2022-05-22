@@ -1,1 +1,7 @@
-// all other page would share the same banner, hence placed in "shared" folder
+import React from 'react'
+
+function Banner() {
+    return <div>-generic banner component placeholder-</div>
+}
+
+export default Banner

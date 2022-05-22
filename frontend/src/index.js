@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home, About } from './pages'
+import { Home, About, Project, StudentApply, NonprofitApply } from './pages'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -12,6 +13,12 @@ root.render(
             <Route path="/" element={<App />}>
                 <Route index element={<Home />}></Route>
                 <Route path="about" element={<About />}></Route>
+                <Route path="projects" element={<Project />}></Route>
+                <Route path="apply/students" element={<StudentApply />}></Route>
+                <Route
+                    path="apply/nonprofits"
+                    element={<NonprofitApply />}
+                ></Route>
             </Route>
         </Routes>
     </BrowserRouter>
