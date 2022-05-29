@@ -2,6 +2,11 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { createTheme } from '@mui/material/styles';
 import { Header, Footer } from './components/shared'
+import { Theme } from './config/Theme'
+import { ThemeProvider } from '@mui/material'
+import { CssBaseline } from '@mui/material';
+
+
 
 
 /* eslint-disable no-unused-vars */
@@ -26,11 +31,12 @@ var theme = createTheme({
 
 function App() {
     return (
-        <div>
+        <ThemeProvider theme={Theme}>
+            <CssBaseline enableColorScheme />
             <Header />
             <Outlet />
             <Footer />
-        </div>
+        </ThemeProvider>
     )
 }
 
