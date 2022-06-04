@@ -6,7 +6,6 @@ const dotenv = require('dotenv')
 const membersRouter = require('./routes/members')
 
 // general setup
-const PORT = 6060
 const app = express()
 dotenv.config()
 
@@ -22,6 +21,4 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 app.use(bodyParser.json())
 app.use('/members', membersRouter)
 
-app.listen(PORT, () => {
-    console.log(`uofablueprint.org-backend listening on port ${PORT}`)
-})
+module.exports = app
