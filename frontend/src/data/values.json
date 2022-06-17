@@ -1,0 +1,29 @@
+{
+    "values": [
+        {
+            "title": "1. Mission First",
+            "body": "We as Blueprint members ultimately unify under one goal - achieving our mission. We place the interests of the people and partners we serve above our own. Our primary measure of success is the amount of positive impact we create through our work.",
+            "image": "/assets/mountain.png"
+        },
+        {
+            "title": "2. Perpetual Growth",
+            "body": "We as Blueprint members value the academic, social, and personal growth of our peers. We constantly seek to perpetuate the cycle of learning and teaching, for our benefit and for others.We strive to offer a helping hand in times of need and push each other to succeed.",
+            "image": "/assets/growth.png"
+        },
+        {
+            "title": "3. Cherish Each Other",
+            "body": "We as Blueprint members seek to cherish our time spent together. We develop meaningful relationships that extend well beyond the scope of the organization. We value each other as individuals and appreciate our differences.",
+            "image": "/assets/love.png"
+        },
+        {
+            "title": "4. Always Innovate",
+            "body": "We as Blueprint members value the academic, social, and personal growth of our peers. We constantly seek to perpetuate the cycle of learning and teaching, for our benefit and for others. We strive to offer a helping hand in times of need and push each other to succeed.",
+            "image": "/assets/mountain.png"
+        },
+        {
+            "title": "5. Be Humble",
+            "body": "We as Blueprint members strive to remain humble, accept our imperfections, and be receptive to feedback. We approach challenges with an open mind and remember that anyone can pursue social good, not just Blueprint.",
+            "image": "/assets/support.png"
+        }
+    ]
+}
