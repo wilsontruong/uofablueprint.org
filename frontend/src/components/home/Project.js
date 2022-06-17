@@ -1,7 +1,11 @@
 import React from 'react'
 
 function Project() {
-    return <div>-Project component placeholder for home page-</div>
+    return (
+        <main id="project">
+            <div> this is the project section.</div>
+        </main>
+    )
 }
 
 export default Project
