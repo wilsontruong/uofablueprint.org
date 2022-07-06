@@ -3,7 +3,7 @@ import { Box, Typography, Link } from '@mui/material'
 
 function Header() {
     return (
-        <main>
+        <main role="header">
             <div>
                 <Box sx={{ display: "flex", flexDirection: "row", bgcolor: "primary.dark", p: 3 }}>
                     <Link href='/'>

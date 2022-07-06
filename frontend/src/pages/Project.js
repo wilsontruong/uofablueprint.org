@@ -4,7 +4,7 @@ import { Banner, ProjectList } from '../components/shared'
 
 function Project() {
     return (
-        <div>
+        <div id="projects">
             <Banner />
             <ProjectList title="Current Projects" />
             <ProjectList title="Past Projects" />

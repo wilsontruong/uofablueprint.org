@@ -71,7 +71,7 @@ for (var i = 1; i < (valueObj.values.length + 1); i++) {
 
 function Value() {
     return (
-        <main>
+        <main role="value">
             <Typography color="primary.dark" ml={30} fontSize={25} fontWeight="bold"> Our Values </Typography>
             {display}
         </main>

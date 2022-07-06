@@ -9,26 +9,27 @@ function Member() {
 
 
     return (
-        <>
+        <div id="members">
             <Typography align='center' variant='h4'
-            sx={
-                {mb: 5}
-            }>
+                sx={
+                    { mb: 5 }
+                }>
                 Meet the team
             </Typography>
 
             <Grid container direction='row' justifyContent='space-evenly' alignItems='center'>
                 {
-                members.map(member => {
-                    return (
-                    <Grid  key={member.id} item xs={3}>
-                        <MemberInfo image={IMG_URI} link={member.linkedin} name={member.name} position={member.position}/>
-                    </Grid>
-                    )
-                })}
+                    members.map(member => {
+                        return (
+                            <Grid key={member.id} item xs={3}>
+                                <MemberInfo image={IMG_URI} link={member.linkedin} name={member.name} position={member.position} />
+                            </Grid>
+                        )
+                    })}
             </Grid>
+        </div>
 
-        </>
+
     )
 }
 

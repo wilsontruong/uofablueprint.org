@@ -5,7 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 function Footer() {
     return (
-        <main>
+        <main role="footer">
             <div>
                 <Box sx={{ display: "flex", flexDirection: "row", bgcolor: "secondary.dark", p: 3 }}>
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
