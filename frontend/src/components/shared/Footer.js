@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Box, Typography, Link } from '@mui/material'
 import { AiOutlineCopyright, AiOutlineMail, AiOutlineLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai'
 import Tooltip from '@mui/material/Tooltip';
@@ -103,6 +104,11 @@ function Footer() {
             </div>
         </main >
     )
+=======
+
+function Footer() {
+    return <div>-footer component placeholder-</div>
+>>>>>>> main
 }
 
 export default Footer
