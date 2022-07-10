@@ -1,7 +1,7 @@
 import React from 'react'
 
 function ApplyProcess() {
-    return <div>-generic apply process component placeholder-</div>
+    return <div id="process">-generic apply process component placeholder-</div>
 }
 
 export default ApplyProcess
