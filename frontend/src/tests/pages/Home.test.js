@@ -4,4 +4,7 @@ import { Home } from '../../pages'
 
 test('renders home placeholder', () => {
     render(<Home />)
+    const linkElement = screen.getByText('-home banner component placeholder-')
+    expect(linkElement).toBeInTheDocument()
+
 })

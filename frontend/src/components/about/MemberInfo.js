@@ -10,7 +10,7 @@ const MemberInfo = ({image, link, name, position }) => {
             <Grid item>
                 <Avatar alt='No image' src={image} 
                 sx={
-                    {height: 150, width: 150}
+                    {height: 200, width: 200, border: 3, borderColor: 'primary.main'}
                 }/>
             </Grid>
             

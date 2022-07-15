@@ -9,8 +9,16 @@ function Member() {
         'https://previews.123rf.com/images/studiostoks/studiostoks1604/studiostoks160400296/55726621-male-business-coach-draws-on-background-pop-art-retro-style-business-training-drawing-board.jpg'
 
     return (
-        <div id="members">
-            <Typography align="center" variant="h4" sx={{ mb: 5 }}>
+        <>
+            <Typography
+                align="center"
+                variant="h4"
+                gutterBottom={true}
+                sx={{
+                    mb: 10,
+                    mt: 10,
+                }}
+            >
                 Meet the Team
             </Typography>
 
@@ -19,6 +27,9 @@ function Member() {
                 direction="row"
                 justifyContent="space-evenly"
                 alignItems="center"
+                sx={{
+                    mb: 10,
+                }}
             >
                 {members.map((member) => {
                     return (
@@ -33,7 +44,7 @@ function Member() {
                     )
                 })}
             </Grid>
-        </div>
+        </>
     )
 }
 
