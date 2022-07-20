@@ -55,4 +55,12 @@ Banner.propTypes = {
     buttonLink: PropTypes.string,
 }
 
+Banner.defaultProps = {
+    header: "",
+    body: "",
+    buttonText: "",
+    buttonLink: "",
+}
+
+
 export default Banner
