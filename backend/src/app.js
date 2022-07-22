@@ -4,6 +4,7 @@ var bodyParser = require('body-parser')
 const dotenv = require('dotenv')
 
 const membersRouter = require('./routes/members')
+const projectsRouter = require('./routes/projects')
 
 // general setup
 const app = express()
@@ -20,5 +21,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 // handle routing
 app.use(bodyParser.json())
 app.use('/members', membersRouter)
+app.use('/projects', projectsRouter)
 
 module.exports = app
