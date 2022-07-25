@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 function ProjectCard({image, header, body}) {
     return (
         <Card raised={true} sx={{
-            maxWidth: 345,
+            width: 345,
             textAlign: 'center'
         }}>
             <CardMedia
