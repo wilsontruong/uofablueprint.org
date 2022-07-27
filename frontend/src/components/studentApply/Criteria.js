@@ -29,7 +29,6 @@ function Criteria() {
                         data-testid = {criteria.image}
                         width = {"30%"} 
                         height = {"30%"} />
-
                         <Typography  //Sets h1 for he titles and h2 for the text contents
                         component = {"h2"} 
                         fontSize = {"24px"} 

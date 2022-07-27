@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Impact",
+        "body": "How much will your project impact the community?",
+        "image": "/assets/momentum.png"
+    },
+    {
+        "title": "Necessity",
+        "body": "How vital is your project to your non-profit organization?",
+        "image": "/assets/warning.png"
+    },
+    {
+        "title": "Scope",
+        "body": "Is your project achievable within the alloted timeline?",
+        "image": "/assets/fence.png"
+    },
+    {
+        "title": "Technical Fit",
+        "body": "Does your project use the capabilities of technology?",
+        "image": "/assets/puzzle-piece.png"
+    },
+    {
+        "title": "Credibility",
+        "body": "Is there evidence that your project will have an impact",
+        "image": "/assets/guarantee.png"
+    }
+]
