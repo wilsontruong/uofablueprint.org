@@ -1,0 +1,32 @@
+[
+    {
+        "number": "01",
+        "title": "Application Open",
+        "body": "Before the start of Fall term (September), we will be opening our application to recruit members across different positions.",
+        "divider": "|"
+    },
+    {
+        "number": "02",
+        "title": "Infosessions",
+        "body": "Learn more about our club and our projects during our infosessions! We will be talking about what you can expect when you join Blueprint and answer any questions you may have.",
+        "divider": "|"
+    },
+    {
+        "number": "03",
+        "title": "Applications Due",
+        "body": "The application includes 2 short questions to help us understand your background and your motivations for joining Blueprint.",
+        "divider": "|"
+    },
+    {
+        "number": "04",
+        "title": "Interviews",
+        "body": "An interview to learn more about your background and your experiences. This will be an opportunity to show your passion for social good and ability to problem solve. Invited candidates will be emailed to sign up for an interview slot.",
+        "divider": "|"
+    },
+    {
+        "number": "05",
+        "title": "Meet the Club",
+        "body": "Let’s chat! We will send out invites to schedule a time to talk. At Blueprint, we want to know what inspires you most, allow you to meet our team, and answer any questions you may have!"
+    }
+
+]

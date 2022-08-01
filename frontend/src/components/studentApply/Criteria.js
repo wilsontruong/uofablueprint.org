@@ -3,7 +3,8 @@ import studentCriteria from '../../../src/data/studentCriteria.json'
 import {Grid, Typography, Box} from '@mui/material'
 function Criteria() {
     return (
-        <div overflow = "hidden">
+        <div overflow = "hidden"
+        style = {{backgroundColor: "#F8F8F8"}}>
             <Typography
             align = {"left"}
             component = {"h1"} 
@@ -13,7 +14,9 @@ function Criteria() {
             marginBottom = {"3%"}>
                 Decision Criteria
             </Typography>
-            <Grid container spacing ={1} align="Center" justify="space-between" >
+            <Grid container spacing ={1} 
+            align="Center"
+            justify="space-between" >
                 {studentCriteria.map(criteria => { //Maps the criteria json to a grid with title and images
                     return( 
                     
