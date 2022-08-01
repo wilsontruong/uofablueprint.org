@@ -28,7 +28,7 @@ function ProjectList({title, projects}) {
                                 <Box display='flex' justifyContent='center' alignItems='center' sx={{
                                     mb: 5
                                 }}>
-                                    <ProjectCard header={project.header} image={project.image} body={project.body} />
+                                    <ProjectCard header={project.header} image={project.image} body={project.body} cardLink={project.link}/>
                                 </Box>
                             </Grid>
                         )

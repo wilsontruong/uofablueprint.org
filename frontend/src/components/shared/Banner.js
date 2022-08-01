@@ -5,7 +5,7 @@ import React from 'react'
 import { Theme } from '../../config/Theme'
 import {HashLink} from 'react-router-hash-link'
 
-function Banner({ header, body, buttonText, buttonLink }) {
+function Banner({ header, body, buttonText, buttonLink, externalLink}) {
     return (
         <Box sx={{
             background: Theme.palette.primary.dark,
@@ -29,22 +29,44 @@ function Banner({ header, body, buttonText, buttonLink }) {
             }}>
                 {body}
             </Typography>
-
-            <HashLink to={buttonLink} smooth> 
-                <Button variant='outlined' size='small' sx={{
-                    m: 2,
-                    ml: 4,
-                    color: Theme.palette.primary.light,
-                    borderColor: Theme.palette.secondary.light,
-                    "&:hover": {
-                        borderColor: Theme.palette.primary.light
-                    },
-                }}>
-                    {buttonText}
-                </Button>
-            </HashLink>
+            
+            <BannerButton buttonLink={buttonLink} externalLink={externalLink} buttonText={buttonText}/>
 
         </Box>
+    )
+}
+
+function BannerButton({buttonLink, externalLink, buttonText}) {
+    if (externalLink != "") {
+        return (
+            <Button variant='outlined' size='small' href={externalLink} target='_blank' rel='noreferrer' sx={{
+                m: 2,
+                ml: 4,
+                color: Theme.palette.primary.light,
+                borderColor: Theme.palette.secondary.light,
+                "&:hover": {
+                    borderColor: Theme.palette.primary.light
+                },
+            }}>
+                {buttonText}
+            </Button>
+        )
+    } 
+
+    return (
+        <HashLink to={buttonLink} smooth> 
+            <Button variant='outlined' size='small'sx={{
+                m: 2,
+                ml: 4,
+                color: Theme.palette.primary.light,
+                borderColor: Theme.palette.secondary.light,
+                "&:hover": {
+                    borderColor: Theme.palette.primary.light
+                },
+            }}>
+                {buttonText}
+            </Button>
+        </HashLink>
     )
 }
 
@@ -53,6 +75,7 @@ Banner.propTypes = {
     body: PropTypes.string,
     buttonText: PropTypes.string,
     buttonLink: PropTypes.string,
+    externalLink: PropTypes.string
 }
 
 Banner.defaultProps = {
@@ -60,7 +83,19 @@ Banner.defaultProps = {
     body: "",
     buttonText: "",
     buttonLink: "",
+    externalLink: ""
 }
 
+BannerButton.propTypes = {
+    buttonText: PropTypes.string,
+    buttonLink: PropTypes.string,
+    externalLink: PropTypes.string
+}
+
+BannerButton.defaultProps = {
+    buttonText: "",
+    buttonLink: "",
+    externalLink: ""
+}
 
 export default Banner

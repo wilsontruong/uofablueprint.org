@@ -1,31 +1,33 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function ProjectCard({image, header, body}) {
+function ProjectCard({image, header, body, cardLink}) {
     return (
         <Card raised={true} sx={{
             width: 345,
             textAlign: 'center'
         }}>
-            <CardMedia
-                component='img'
-                height='140'
-                image={image}
-                alt='no image'
-            />
+            <CardActionArea href={cardLink} target='_blank' rel='noreferrer'>
+                <CardMedia
+                    component='img'
+                    height='140'
+                    image={image}
+                    alt='no image'
+                />
 
-            <CardContent>
-                <Typography gutterBottom={true} variant='h5' component='div' sx={{
-                    fontWeight: 'bold'
-                }}>
-                    {header}
-                </Typography>
+                <CardContent>
+                    <Typography gutterBottom={true} variant='h5' component='div' sx={{
+                        fontWeight: 'bold'
+                    }}>
+                        {header}
+                    </Typography>
 
-                <Typography variant='body1'>
-                    {body}
-                </Typography>
-            </CardContent>
+                    <Typography variant='body1'>
+                        {body}
+                    </Typography>
+                </CardContent>
+            </CardActionArea>
         </Card>
     )
 }
@@ -33,7 +35,16 @@ function ProjectCard({image, header, body}) {
 ProjectCard.propTypes = {
     image: PropTypes.string,
     header: PropTypes.string,
-    body: PropTypes.string
+    body: PropTypes.string,
+    cardLink: PropTypes.string
+}
+
+ProjectCard.defaultProps = {
+    image: "",
+    header: "",
+    body: "",
+    cardLink: ""
+
 }
 
 export default ProjectCard
