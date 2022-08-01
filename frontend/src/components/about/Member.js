@@ -6,7 +6,7 @@ import members from '../../data/members.js'
 
 function Member() {
     const IMG_URI =
-        'https://previews.123rf.com/images/studiostoks/studiostoks1604/studiostoks160400296/55726621-male-business-coach-draws-on-background-pop-art-retro-style-business-training-drawing-board.jpg'
+        'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'
 
     return (
         <>

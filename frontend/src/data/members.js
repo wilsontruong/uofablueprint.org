@@ -1,43 +1,98 @@
- export default [
+export default [
     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 1
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 2
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 3
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 4
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 5
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 6
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 7
-    },     {
-        "name": "Firstname Lastname",
-        "position": "position",
-        "linkedin": "uofablueprint.org",
-        "id": 8
-    }
+        name: 'Aagaman Gurung',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 1,
+    },
+    {
+        name: 'Aaron Boyd',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 2,
+    },
+    {
+        name: 'Akarsh Sharma',
+        position: 'VP Projects',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 3,
+    },
+    {
+        name: 'Armaan Katyal',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 4,
+    },
+    {
+        name: 'Darwin Trieu',
+        position: 'VP Internal',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 5,
+    },
+    {
+        name: 'Dimas A. Sudjito',
+        position: 'President',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 6,
+    },
+    {
+        name: 'Duc Ho',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 7,
+    },
+    {
+        name: 'Ethan Franz',
+        position: 'Project Manager',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 8,
+    },
+    {
+        name: 'Filippo Ciandy',
+        position: 'Project Manager',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 9,
+    },
+    {
+        name: 'Gurveer Sohal',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 10,
+    },
+    {
+        name: 'Juan Fernandez Lezama',
+        position: 'Project Developer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 11,
+    },
+    {
+        name: 'Kevin Wilianto',
+        position: 'VP External',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 12,
+    },
+    {
+        name: 'Kim Tinana',
+        position: 'Project Designer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 13,
+    },
+    {
+        name: 'Mark Maligalig',
+        position: 'Project Designer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 14,
+    },
+    {
+        name: 'Megan Kwan',
+        position: 'Project Designer',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 15,
+    },
+    {
+        name: 'MinJi Kim',
+        position: 'Project Manager',
+        linkedin: 'https://www.linkedin.com/company/uofa-blueprint',
+        id: 16,
+    },
 ]
