@@ -7,21 +7,22 @@ import { Service, Criteria } from '../components/nonprofitApply'
 function NonprofitApply() {
     return (
         <div>
-            <Banner 
-                header='For Nonprofits' 
-                body='As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge..'
-                buttonText='Work with us'
-                buttonLink="#NonprofitApplyProcess"
+            <Banner
+                header="For Nonprofits"
+                body="As a partner, Blueprint will work with you to develop technology that turns your vision into a reality, completely free of charge.."
+                buttonText="Work with us"
+                externalLink="https://forms.gle/wZy3PSgeywXSWGfh6"
             />
             <Service />
-            <div id="NonprofitApplyProcess">
+            <div id="NonprofitApplyProcess" style={{ marginBottom: '3%' }}>
                 <ApplyProcess
-                ApplyProcessData={ApplyProcessData}
-                title="Nonprofits Application Process"/>
+                    ApplyProcessData={ApplyProcessData}
+                    title="Nonprofits Application Process"
+                />
             </div>
-        
+
             <Criteria />
-            <Faq FaqData={FaqData}/>
+            <Faq FaqData={FaqData} />
         </div>
     )
 }

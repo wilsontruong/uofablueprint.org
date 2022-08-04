@@ -12,7 +12,7 @@ function StudentApply() {
                 header="For Students"
                 body="Joining Blueprint is a great way to give back to your community. Help us build our applications and work with nonprofits!"
                 buttonText="Join our team"
-                buttonLink="/apply/students#studentApplyProcess"
+                externalLink="https://forms.gle/vz8uULVWHs2U1mFQ9"
             ></Banner>
             <div id="studentApplyProcess" style={{ marginBottom: '3%' }}>
                 <ApplyProcess

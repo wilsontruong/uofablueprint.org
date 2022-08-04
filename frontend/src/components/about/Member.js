@@ -35,7 +35,7 @@ function Member() {
                     return (
                         <Grid key={member.id} item xs={3}>
                             <MemberInfo
-                                image={IMG_URI}
+                                image={member.image ? member.image : IMG_URI}
                                 link={member.linkedin}
                                 name={member.name}
                                 position={member.position}
