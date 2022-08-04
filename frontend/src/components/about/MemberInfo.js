@@ -3,47 +3,58 @@ import PropTypes from 'prop-types'
 import { Avatar, Card, CardHeader, Grid, IconButton } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 
-const MemberInfo = ({image, link, name, position }) => {
+const MemberInfo = ({ image, link, name, position }) => {
     return (
-    <>
-        <Grid container direction='column' justifyContent='center' alignItems='center'>
-            <Grid item>
-                <Avatar alt='No image' src={image} 
-                sx={
-                    {height: 150, width: 150}
-                }/>
-            </Grid>
-            
-            <Grid item>
-                <Card elevation={0}>
-                    <CardHeader 
-
-                    titleTypographyProps={{fontSize: 20}}
-                    title = {name}
-
-                    subheader = {position}
-
-                    action = {
-                        <IconButton aria-label='settings'  href={link}> 
-                            <LinkedInIcon color='primary' fontSize='medium'
-                            sx={{
-                                color: 'black'
-                            }}/>
-                        </IconButton>
-                    }
-
-                    sx={
-                        {textAlign: 'center'}
-                    }
+        <>
+            <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+            >
+                <Grid item>
+                    <Avatar
+                        alt="No image"
+                        src={image}
+                        sx={{
+                            height: 200,
+                            width: 200,
+                            border: 3,
+                            borderColor: 'primary.main',
+                        }}
                     />
-                    
-                </Card>
+                </Grid>
+
+                <Grid item>
+                    <Card elevation={0}>
+                        <CardHeader
+                            titleTypographyProps={{ fontSize: 20 }}
+                            title={name}
+                            subheader={position}
+                            action={
+                                link ? (
+                                    <IconButton
+                                        aria-label="settings"
+                                        href={link}
+                                        target="_blank"
+                                    >
+                                        <LinkedInIcon
+                                            color="primary"
+                                            fontSize="medium"
+                                            sx={{
+                                                color: 'black',
+                                            }}
+                                        />
+                                    </IconButton>
+                                ) : null
+                            }
+                            sx={{ textAlign: 'center' }}
+                        />
+                    </Card>
+                </Grid>
             </Grid>
-        </Grid>
-
-
-    </>
-  )
+        </>
+    )
 }
 
 MemberInfo.propTypes = {
@@ -51,7 +62,7 @@ MemberInfo.propTypes = {
     name: PropTypes.string,
     position: PropTypes.string,
     linkImage: PropTypes.string,
-    link: PropTypes.string
+    link: PropTypes.string,
 }
 
 export default MemberInfo

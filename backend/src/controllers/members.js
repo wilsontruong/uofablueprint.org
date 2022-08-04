@@ -18,9 +18,9 @@ module.exports = {
         }
     },
     create: async (req, res) => {
-        const member = new member(req.body)
+        const member = new Member(req.body)
         try {
-            const savedmember = await Member.save()
+            const savedmember = await Member.create(member)
             res.json(savedmember)
         } catch (err) {
             res.json({ message: err })
@@ -42,7 +42,9 @@ module.exports = {
                 { _id: req.params.memberId },
                 { $set: req.body }
             )
-            res.json(updatedmember)
+            res.status(200).json({
+                message: 'Member Updated',
+            })
         } catch (err) {
             res.json({ message: err })
         }

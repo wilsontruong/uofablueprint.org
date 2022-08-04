@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Passion",
+        "body": "Are you excited to dedicate time, energy, and compassion towards understanding and building with communities?",
+        "image": "/assets/fire.png"
+    },
+    {
+        "title": "Growth",
+        "body": "Do you actively seek out ways to grow? Do you take action to work towards that growth?",
+        "image": "/assets/growth.png"
+    },
+    {
+        "title": "Resourcefulness",
+        "body": "Are you self-motivated and driven? Do you adapt to new environments and challenges?",
+        "image": "/assets/steering-wheel.png"
+    },
+    {
+        "title": "Attitude",
+        "body": "Do you approach problems and challenges with an open mind? Are you able to work through unfamiliar situations?",
+        "image": "/assets/personality.png"
+    },
+    {
+        "title": "Teamwork",
+        "body": "Do you enjoy collaborating and learning with others? Do you value others' perspectives and experiences?",
+        "image": "/assets/puzzle-piece.png"
+    },
+    {
+        "title": "Culture",
+        "body": "Are you looking forward to developing meaningful relationships with our members and partners beyond the work environment?",
+        "image": "/assets/support.png"
+    }
+
+]

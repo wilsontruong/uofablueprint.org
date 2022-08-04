@@ -3,13 +3,15 @@ import PropTypes from 'prop-types'
 import { Box } from '@mui/system'
 import React from 'react'
 import { Theme } from '../../config/Theme'
+import { HashLink } from 'react-router-hash-link'
 
-function Banner({ header, body, buttonText, buttonLink }) {
+function Banner({ header, body, buttonText, buttonLink, externalLink }) {
     return (
         <Box
             sx={{
                 background: Theme.palette.primary.dark,
                 color: Theme.palette.primary.light,
+                height: 300,
             }}
         >
             <Typography
@@ -17,7 +19,7 @@ function Banner({ header, body, buttonText, buttonLink }) {
                 sx={{
                     p: 2,
                     pl: 4,
-                    fontWeight: 'medium',
+                    fontWeight: 'bold',
                 }}
             >
                 {header}
@@ -29,18 +31,30 @@ function Banner({ header, body, buttonText, buttonLink }) {
                     p: 2,
                     pl: 4,
                     fontSize: 20,
-                    fontWeight: 'light',
+                    fontWeight: 'medium',
+                    width: 500,
                 }}
             >
                 {body}
             </Typography>
+            <BannerButton
+                buttonLink={buttonLink}
+                externalLink={externalLink}
+                buttonText={buttonText}
+            />
+        </Box>
+    )
+}
 
+function BannerButton({ buttonLink, externalLink, buttonText }) {
+    if (externalLink != '') {
+        return (
             <Button
                 variant="outlined"
                 size="small"
-                href={buttonLink}
+                href={externalLink}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noreferrer"
                 sx={{
                     m: 2,
                     ml: 4,
@@ -53,7 +67,27 @@ function Banner({ header, body, buttonText, buttonLink }) {
             >
                 {buttonText}
             </Button>
-        </Box>
+        )
+    }
+
+    return (
+        <HashLink to={buttonLink} smooth style={{ textDecoration: 'none' }}>
+            <Button
+                variant="outlined"
+                size="small"
+                sx={{
+                    m: 2,
+                    ml: 4,
+                    color: Theme.palette.primary.light,
+                    borderColor: Theme.palette.secondary.light,
+                    '&:hover': {
+                        borderColor: Theme.palette.primary.light,
+                    },
+                }}
+            >
+                {buttonText}
+            </Button>
+        </HashLink>
     )
 }
 
@@ -62,6 +96,26 @@ Banner.propTypes = {
     body: PropTypes.string,
     buttonText: PropTypes.string,
     buttonLink: PropTypes.string,
+    externalLink: PropTypes.string,
 }
 
+Banner.defaultProps = {
+    header: '',
+    body: '',
+    buttonText: '',
+    buttonLink: '',
+    externalLink: '',
+}
+
+BannerButton.propTypes = {
+    buttonText: PropTypes.string,
+    buttonLink: PropTypes.string,
+    externalLink: PropTypes.string,
+}
+
+BannerButton.defaultProps = {
+    buttonText: '',
+    buttonLink: '',
+    externalLink: '',
+}
 export default Banner
