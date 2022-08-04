@@ -9,35 +9,34 @@ function Service() {
             bgcolor: 'secondary.light',
         }}>
           
-        <Box sx={{
-            mr: '25%'
-        }}>
-            <Typography variant='h4' align="right" style={{ fontWeight: 'bold' }} paddingTop={4}>
+        
+    
+        <Typography fontSize={40} align="center" style={{ fontWeight: 'bold' }} padding={5}>
                 Our Services             
-            </Typography>
-        </Box>
+        </Typography>
+        
        
           
         <Box sx={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            ml: '30%',
-            mr: '30%',
+            ml: '25%',
+            mr: '25%',
         }}>
-
+            
             <Box component="img" marginRight={5} marginBottom={5}
-                sx={{ height: 125, width: 125 }}
+                sx={{ height: 130, width: 130 }}
                 src="/assets/monitor.png" />
 
 
             <Box marginBottom={5}>
-                <Typography color='primary' fontWeight={'bold'} fontSize={27} marginBottom={1}>Web Development</Typography>
+                <Typography color='primary' fontWeight={'bold'} fontSize={30} marginBottom={1}>Web Development</Typography>
 
-                <Typography color='secondary' >Web applications let your users access information from any browser.
+                <Typography color='secondary' fontSize={18} >Web applications let your users access information from any browser.
                 This might be better for applications that need to be publicly available or ones that help facilitate task management.</Typography>
             </Box>
-               
+            
         </Box>
         </Box>
           

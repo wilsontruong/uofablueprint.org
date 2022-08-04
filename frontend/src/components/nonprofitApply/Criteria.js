@@ -22,7 +22,8 @@ function useWindowSize (){
 function Criteria() {
     const width = useWindowSize()
     return (
-        <div overflow = "hidden">
+        <div overflow = "hidden"
+        style = {{backgroundColor: "#F8F8F8"}}>
             <Typography //Styles title
             align = {"left"}
             component = {"h1"} 

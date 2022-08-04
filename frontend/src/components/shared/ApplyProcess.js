@@ -6,7 +6,7 @@ function ApplicationProcess({ ApplyProcessData, title }) {
     return (
         <div>
             <Typography
-                variant="h4"
+                fontSize={40}
                 align="center"
                 style={{ fontWeight: 'bold' }}
                 padding={5}
@@ -21,14 +21,14 @@ function ApplicationProcess({ ApplyProcessData, title }) {
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
-                                ml: '30%',
-                                mr: '30%',
+                                ml: '25%',
+                                mr: '25%',
                             }}
                         >
                             <Box>
                                 <Typography
                                     marginRight={5}
-                                    fontSize={90}
+                                    fontSize={110}
                                     color={'primary'}
                                     fontWeight={500}
                                 >
@@ -40,13 +40,16 @@ function ApplicationProcess({ ApplyProcessData, title }) {
                                 <Typography
                                     color="primary"
                                     fontWeight={'bold'}
-                                    fontSize={27}
+                                    fontSize={30}
                                     marginBottom={1}
                                 >
                                     {applyProcess.title}
                                 </Typography>
 
-                                <Typography color="secondary">
+                                <Typography 
+                                    color="secondary"
+                                    fontSize={18}
+                                >
                                     {applyProcess.body}
                                 </Typography>
                             </Box>
@@ -54,7 +57,7 @@ function ApplicationProcess({ ApplyProcessData, title }) {
 
                         <Box
                             sx={{
-                                ml: '32.5%',
+                                ml: '27.5%',
                             }}
                         >
                             <Typography
