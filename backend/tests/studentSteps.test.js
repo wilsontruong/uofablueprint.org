@@ -24,55 +24,55 @@ describe('Test the root path', () => {
     jest.setTimeout(20000) // added a timeout to avoid the test to fail as the MongoDB connection is slow
 
     const api_key = process.env.API_KEY
-    var memberId = '';
-
-    // Create member
-    test('POST /api/members/ -> should return status 201', async () => {
+    var stepsId = '';
+    test('POST /studentsteps/ -> should return status 200', async () => {
         const response = await request(app)
-            .post('/members/')
+            .post('/studentsteps/')
             .set('api_key', api_key)
             .send({
-                name: 'Demo user 1',
-                role: 'Senior Developer'
+                number: '69',
+                title: 'Memester',
+                body: 'Be a memester or go home',
+                divider: '|'
             })
-        expect(response.statusCode).toBe(201)
-        memberId = response.body._id;
+        expect(response.statusCode).toBe(200)
+        stepsId = response.body._id;
     })
-    // Get a member
-    test('GET /api/members/:memberId -> status code should be 200', async () => {
+
+    test('GET /studentsteps/:stepsId -> status code should be 200', async () => {
         const response = await request(app)
-            .get('/api/members/' + memberId)
+            .get('/studentsteps/' + stepsId)
             .set('api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 
-    // Get all members
-    test('GET /api/members/all -> status code should be 200', async () => {
+    test('GET /studentsteps/all -> status code should be 200', async () => {
         const response = await request(app)
-            .get('/api/members/all')
+            .get('/studentsteps/all')
             .set('api-key', api_key)
         expect(response.statusCode).toBe(200)
     })
 
-    // Update a member
-    test('PUT /api/members/:memberId -> should return status 200 with updated student info', async () => {
+    test('PUT /studentsteps/:stepsId -> should return status 200 with updated student info', async () => {
         const response = await request(app)
-            .put('/api/members/' + memberId)
+            .put('/studentsteps/' + stepsId)
             .set('api-key', api_key) // set the token in the header
             .send({
-                name: 'Demo User 2',
-                role: 'New here'
+                number: '40',
+                title: 'Memester',
+                body: 'Be a memester or go to school',
+                divider: '|'
             })
-
+        console.log(response.body)
         expect(response.statusCode).toBe(200) // expect the status code to be 200
-        expect(response.body.message).toBe('Member Updated')
+        expect(response.body.message).toBe('Step updated!')
     })
 
-    // Delete a member
-    test('DELETE /api/members/:memberId -> should return status 200', async () => {
-        const response = await request(app)
-            .delete('/api/members/' + memberId)
+        // Delete a project
+       test('DELETE /studentsteps/:stepsId -> should return status 200', async () => {
+           const response = await request(app)
+            .delete('/studentsteps/' + stepsId)
             .set('api-key', api_key) // set the token in the header
-        expect(response.statusCode).toBe(200)
-    })
+            expect(response.statusCode).toBe(200)
+        })
 })
