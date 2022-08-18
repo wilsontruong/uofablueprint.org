@@ -27,7 +27,7 @@ describe('Test the root path', () => {
     var memberId = '';
 
     // Create member
-    test('POST /api/members/ -> should return status 201', async () => {
+    test('POST /members/ -> should return status 201', async () => {
         const response = await request(app)
             .post('/members/')
             .set('api_key', api_key)
@@ -35,29 +35,29 @@ describe('Test the root path', () => {
                 name: 'Demo user 1',
                 role: 'Senior Developer'
             })
-        expect(response.statusCode).toBe(201)
+        expect(response.statusCode).toBe(200)
         memberId = response.body._id;
     })
     // Get a member
-    test('GET /api/members/:memberId -> status code should be 200', async () => {
+    test('GET /members/:memberId -> status code should be 200', async () => {
         const response = await request(app)
-            .get('/api/members/' + memberId)
+            .get('/members/' + memberId)
             .set('api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 
     // Get all members
-    test('GET /api/members/all -> status code should be 200', async () => {
+    test('GET /members/all -> status code should be 200', async () => {
         const response = await request(app)
-            .get('/api/members/all')
+            .get('/members/all')
             .set('api-key', api_key)
         expect(response.statusCode).toBe(200)
     })
 
     // Update a member
-    test('PUT /api/members/:memberId -> should return status 200 with updated student info', async () => {
+    test('PUT /members/:memberId -> should return status 200 with updated student info', async () => {
         const response = await request(app)
-            .put('/api/members/' + memberId)
+            .put('/members/' + memberId)
             .set('api-key', api_key) // set the token in the header
             .send({
                 name: 'Demo User 2',
@@ -69,9 +69,9 @@ describe('Test the root path', () => {
     })
 
     // Delete a member
-    test('DELETE /api/members/:memberId -> should return status 200', async () => {
+    test('DELETE /members/:memberId -> should return status 200', async () => {
         const response = await request(app)
-            .delete('/api/members/' + memberId)
+            .delete('/members/' + memberId)
             .set('api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
