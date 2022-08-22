@@ -32,8 +32,7 @@ describe('Test the root path', () => {
             .send({
                 number: '69',
                 title: 'Memester',
-                body: 'Be a memester or go home',
-                divider: '|'
+                body: 'Be a memester or go home'
             })
         expect(response.statusCode).toBe(200)
         stepsId = response.body._id;
@@ -60,10 +59,8 @@ describe('Test the root path', () => {
             .send({
                 number: '40',
                 title: 'Memester',
-                body: 'Be a memester or go to school',
-                divider: '|'
+                body: 'Be a memester or go to school'            
             })
-        console.log(response.body)
         expect(response.statusCode).toBe(200) // expect the status code to be 200
         expect(response.body.message).toBe('Step updated!')
     })

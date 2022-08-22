@@ -20,7 +20,6 @@ module.exports = {
     },
     create: async (req, res) => {
         const step = new studentSteps(req.body)
-        console.log(step)
         try {
             const newSteps = await studentSteps.create(step)
             res.json(newSteps)

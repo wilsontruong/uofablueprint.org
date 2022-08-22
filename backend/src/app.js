@@ -9,9 +9,8 @@ const studentStepsRouter = require('./routes/studentApplySteps')
 
 // general setup
 const app = express()
-const path = require("path");
 
-dotenv.config({ path: path.resolve(__dirname, './.env') })
+dotenv.config()
 
 // connect to mongodb
 mongoose.connect(process.env.MONGODB_ADDR, {

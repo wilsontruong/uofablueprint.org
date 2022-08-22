@@ -14,11 +14,6 @@ const studApplyStepsSchema = mongoose.Schema({
     {
         type: String,
         required: true
-    },
-    divider: {
-        type: String,
-        required: false
-
     }
 
 })
