@@ -12,7 +12,7 @@ module.exports = {
     },
     getStep: async (req, res) => {
         try {
-            const step = await studentSteps.findById(req.params.projectId)
+            const step = await studentSteps.findById(req.params.stepsId)
             res.json(step)
         } catch (err) {
             res.json({ message: "Step with the given ID was not found" })
