@@ -28,9 +28,10 @@ describe('Test the root path', () => {
 
     // Create member
     test('POST /members/ -> should return status 201', async () => {
+        
         const response = await request(app)
             .post('/members/')
-            .set('api_key', api_key)
+            .set('web-api-key', api_key)
             .send({
                 name: 'Demo user 1',
                 role: 'Senior Developer'
@@ -42,7 +43,7 @@ describe('Test the root path', () => {
     test('GET /members/:memberId -> status code should be 200', async () => {
         const response = await request(app)
             .get('/members/' + memberId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 
@@ -50,7 +51,7 @@ describe('Test the root path', () => {
     test('GET /members/all -> status code should be 200', async () => {
         const response = await request(app)
             .get('/members/all')
-            .set('api-key', api_key)
+            .set('web-api-key', api_key)
         expect(response.statusCode).toBe(200)
     })
 
@@ -58,7 +59,7 @@ describe('Test the root path', () => {
     test('PUT /members/:memberId -> should return status 200 with updated student info', async () => {
         const response = await request(app)
             .put('/members/' + memberId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
             .send({
                 name: 'Demo User 2',
                 role: 'New here'
@@ -72,7 +73,7 @@ describe('Test the root path', () => {
     test('DELETE /members/:memberId -> should return status 200', async () => {
         const response = await request(app)
             .delete('/members/' + memberId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 })
