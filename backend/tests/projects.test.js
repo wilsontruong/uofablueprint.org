@@ -27,7 +27,7 @@ describe('Test projects routes', () => {
     test('POST /projects/ -> should return status 201', async () => {
         const response = await request(app)
             .post('/projects/')
-            .set('api_key', api_key)
+            .set('web-api-key', api_key)
             .send({
                 name: 'Project 1',
                 description: 'This is a test project.',
@@ -40,7 +40,7 @@ describe('Test projects routes', () => {
     test('GET /projects/:projectId -> status code should be 200', async () => {
         const response = await request(app)
             .get('/projects/' + projectId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 
@@ -48,7 +48,7 @@ describe('Test projects routes', () => {
     test('GET /projects/all -> status code should be 200', async () => {
         const response = await request(app)
             .get('/members/all')
-            .set('api-key', api_key)
+            .set('web-api-key', api_key)
         expect(response.statusCode).toBe(200)
     })
 
@@ -56,7 +56,7 @@ describe('Test projects routes', () => {
     test('PUT /projects/:projectId -> should return status 200 with updated student info', async () => {
         const response = await request(app)
             .put('/projects/' + projectId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
             .send({
                 name: 'Project 2',
                 description: 'This is an updated test project.',
@@ -71,7 +71,7 @@ describe('Test projects routes', () => {
     test('DELETE /projects/:projectId -> should return status 200', async () => {
         const response = await request(app)
             .delete('/projects/' + projectId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 })

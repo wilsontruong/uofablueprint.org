@@ -28,7 +28,7 @@ describe('Test the root path', () => {
     test('POST /studentsteps/ -> should return status 200', async () => {
         const response = await request(app)
             .post('/studentsteps/')
-            .set('api_key', api_key)
+            .set('web-api-key', api_key)
             .send({
                 number: '69',
                 title: 'Memester',
@@ -41,21 +41,21 @@ describe('Test the root path', () => {
     test('GET /studentsteps/:stepsId -> status code should be 200', async () => {
         const response = await request(app)
             .get('/studentsteps/' + stepsId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
         expect(response.statusCode).toBe(200)
     })
 
     test('GET /studentsteps/all -> status code should be 200', async () => {
         const response = await request(app)
             .get('/studentsteps/all')
-            .set('api-key', api_key)
+            .set('web-api-key', api_key)
         expect(response.statusCode).toBe(200)
     })
 
     test('PUT /studentsteps/:stepsId -> should return status 200 with updated student info', async () => {
         const response = await request(app)
             .put('/studentsteps/' + stepsId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
             .send({
                 number: '40',
                 title: 'Memester',
@@ -69,7 +69,7 @@ describe('Test the root path', () => {
        test('DELETE /studentsteps/:stepsId -> should return status 200', async () => {
            const response = await request(app)
             .delete('/studentsteps/' + stepsId)
-            .set('api-key', api_key) // set the token in the header
+            .set('web-api-key', api_key) // set the token in the header
             expect(response.statusCode).toBe(200)
         })
 })
