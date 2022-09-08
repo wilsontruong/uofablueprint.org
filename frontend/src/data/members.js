@@ -98,8 +98,15 @@ export default [
     },
     {
         name: 'MinJi Kim',
-        position: 'Project Manager',
+        position: 'Outreach Coordinator',
         linkedin: '',
         id: 16,
+    },
+    {
+        name: 'Saahil Rachh',
+        position: 'VP Technology',
+        linkedin: 'https://www.linkedin.com/in/saahil-rachh/',
+        id: 17,
+        image: 'assets/members/Saahil Rachh.png'
     },
 ]
