@@ -7,6 +7,7 @@ const display = []
 var displayDirectionVal = 'row'
 var textAlignVal = 'left'
 var marginVal = 20
+var paddingLeft = 20
 
 for (var i = 1; i < valueObj.values.length + 1; i++) {
     if (i % 2 == 0) {
@@ -18,7 +19,8 @@ for (var i = 1; i < valueObj.values.length + 1; i++) {
         // left value
         displayDirectionVal = 'row-reverse'
         textAlignVal = 'left'
-        marginVal = 20
+        marginVal = 0
+        paddingLeft = 20;
     }
 
     display.push(
@@ -28,6 +30,7 @@ for (var i = 1; i < valueObj.values.length + 1; i++) {
             textAlign={textAlignVal}
             justifyContent="flex-end"
             ml={marginVal}
+            pl={paddingLeft}
             sx={{
                 bgcolor: 'primary.light',
                 color: 'primary.dark',
