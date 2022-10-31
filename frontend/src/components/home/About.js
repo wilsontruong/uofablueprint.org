@@ -48,6 +48,15 @@ function About() {
                         Read More
                     </Button>
                 </Link>
+
+                <Box
+                    sx={{
+                        alignItems: 'left',
+                        paddingLeft: '100px'
+                    }}
+                >
+                    <img src="../../../assets/Home_AU.png" alt="Home_AU.png" height="415" width="516"/>
+                </Box>
             </Box>
         </div>
     )

@@ -12,10 +12,11 @@ function Banner() {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'center',
+                    alignItems: 'left',
                     backgroundColor: 'primary.dark',
                     color: 'primary.light',
                     pb: 5,
+                    paddingLeft: '100px'
                 }}
             >
                 <Typography
@@ -27,6 +28,8 @@ function Banner() {
                 >
                     Tech For Social Good
                 </Typography>
+                
+
 
                 <Box
                     sx={{
@@ -36,7 +39,7 @@ function Banner() {
                     <Typography
                         variant="body1"
                         sx={{
-                            textAlign: 'center',
+                            textAlign: 'left',
                             fontSize: 20,
                             mb: 5,
                         }}
@@ -58,6 +61,15 @@ function Banner() {
                         Learn More
                     </Button>
                 </HashLink>
+
+                <Box
+                    sx={{
+                        alignItems: 'right',
+                        paddingRight: '100px'
+                    }}
+                >
+                    <img src="../../../assets/Home_TFSG.png" alt="Home_TFSG.png" height="415" width="516"/>
+                </Box>
             </Box>
         </>
     )
