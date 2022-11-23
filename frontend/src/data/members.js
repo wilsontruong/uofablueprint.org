@@ -109,4 +109,220 @@ export default [
         id: 17,
         image: 'assets/members/Saahil Rachh.png'
     },
+    {
+        name: 'Lora Ma',
+        position: 'VP Design',
+        linkedin: '',
+        id: 18,
+    },
+    {
+        name: 'Hassan Akber',
+        position: 'Outreach Coordinator',
+        linkedin: '',
+        id: 19,
+    },
+    {
+        name: 'Matt Gaidukevich',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 20,
+    },
+    {
+        name: 'Saahil Rachh',
+        position: 'VP Technology',
+        linkedin: '',
+        id: 21,
+    },
+    {
+        name: 'Wilson Truong',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 22,
+    },
+    {
+        name: 'Casper Nguyen',
+        position: 'Social Media Coordinator',
+        linkedin: '',
+        id: 23,
+    },
+    {
+        name: 'Amitoj Kaur',
+        position: 'Internal Coordinator',
+        linkedin: '',
+        id: 24,
+    },
+    {
+        name: 'Tazvik Ziauddin',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 25,
+    },
+    {
+        name: 'Ishan Kashyap',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 26,
+    },
+    {
+        name: 'Anietie Akpanusoh',
+        position: 'Social Media Coordinator',
+        linkedin: '',
+        id: 27,
+    },
+    {
+        name: 'Sandy Yim',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 28,
+    },
+    {
+        name: 'Weixi Cheng',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 29,
+    },
+    {
+        name: 'Manuela Lopez',
+        position: 'Social Media Coordinator',
+        linkedin: '',
+        id: 30,
+    },
+    {
+        name: 'Randy Luna',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 31,
+    },
+    {
+        name: 'Kaaden RumanCam',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 32,
+    },
+    {
+        name: 'Binh Phan',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 33,
+    },
+    {
+        name: 'Hailey Chan',
+        position: 'Project Designer',
+        linkedin: '',
+        id: 34,
+    },
+    {
+        name: 'Farel Lukas',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 35,
+    },
+    {
+        name: 'Priyanshu Rastogi',
+        position: '',
+        linkedin: '',
+        id: 36,
+    },
+    {
+        name: 'Sharma Shreya',
+        position: 'Project Designer',
+        linkedin: '',
+        id: 37,
+    },
+    {
+        name: 'Janukan Sivajeyan',
+        position: 'Tech Lead/Project Manager',
+        linkedin: '',
+        id: 38,
+    },
+    {
+        name: 'Luke Samson',
+        position: 'Project Designer',
+        linkedin: '',
+        id: 39,
+    },
+    {
+        name: 'Sooraj Arakkal',
+        position: 'Tech Lead',
+        linkedin: '',
+        id: 40,
+    },
+    {
+        name: 'Andrew Culberson',
+        position: 'Project Manager',
+        linkedin: '',
+        id: 41,
+    },
+    {
+        name: 'Deepak Mamillapalli',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 42,
+    },
+    {
+        name: 'Mansoor Anis',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 42,
+    },
+    {
+        name: 'Kuunal Gupta',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 43,
+    },
+    {
+        name: 'Meharpreet Nanda',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 44,
+    },
+    {
+        name: 'Kallie Huynh',
+        position: 'Project Developer',
+        linkedin: '',
+        id: 45,
+    },
+    {
+        name: 'Crystal Shi',
+        position: 'HR Coordinator',
+        linkedin: '',
+        id: 46,
+    },
+    {
+        name: 'Urooj Fatima',
+        position: 'Internal Coordinator',
+        linkedin: '',
+        id: 47,
+    },
+    {
+        name: 'Sukhmani Saggu',
+        position: 'Social Media Coordinator',
+        linkedin: '',
+        id: 48,
+    },
+    {
+        name: 'Youssef Ismail',
+        position: 'Technical Co-Lead',
+        linkedin: '',
+        id: 49,
+    },
+    {
+        name: 'Moyinoluwa Famobiwo',
+        position: 'Tech Lead',
+        linkedin: '',
+        id: 50,
+    },
+    {
+        name: 'Dillan Tran',
+        position: 'Project Designer',
+        linkedin: '',
+        id: 51,
+    },
 ]
+
+
+
+
+
+
