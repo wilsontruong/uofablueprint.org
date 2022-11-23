@@ -162,7 +162,7 @@ function Footer() {
                                 <Tooltip
                                     disableFocusListener
                                     disableTouchListener
-                                    title="uofa-blueprint@gmail.com"
+                                    title="bluep@ualberta.ca"
                                 >
                                     <Box
                                         sx={{

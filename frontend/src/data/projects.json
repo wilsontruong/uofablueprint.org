@@ -6,7 +6,21 @@
             "body": " International Students' Association (ISA) is a student group at the University of Alberta with the mission to serve, represent and advocate for the interests of the international students at the University of Alberta.",
             "image": "https://static.ucraft.net/fs/ucraft/userFiles/uaisa/images/logo.png?v=1622432042",
             "link": "https://medium.com/@uofablueprint/international-students-association-project-page-1f65f79562f0"
-        }
+        },
+	{
+	    "id":2,
+	    "header":"DishZero",
+	    "body": "DishZero is a student group that provides students and staff with reusable alternatives to traditional disposable takeout containers and mugs.",
+	    "image": "https://cdn.discordapp.com/attachments/1016396172736344085/1036380486085394543/unknown.png",
+	    "link": "https://medium.com/@uofablueprint/dishzero-project-page-4992032ddfd7"
+	},
+	{
+	    "id":3,
+	    "header": "Alzheimer Calgary",
+	    "body": "Alzheimer Society of Calgary aims to enable local people impacted by dementia to live life well and build the capacity of the community to support and care for them.",
+	    "image": "https://cdn.discordapp.com/attachments/1016396172736344085/1036380486462865438/unknown.png",
+	    "link":  "https://medium.com/@uofablueprint/alzheimer-calgary-project-b777a2838d6f"
+	}
     ],
 
     "past": [
