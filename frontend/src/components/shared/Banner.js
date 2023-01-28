@@ -9,40 +9,49 @@ function Banner({ header, body, buttonText, buttonLink, externalLink }) {
     return (
         <Box
             sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
                 background: Theme.palette.primary.dark,
                 color: Theme.palette.primary.light,
-                height: 300,
+                height: 430,
             }}
         >
-            <Typography
-                variant="h4"
+            <div
                 sx={{
-                    p: 2,
-                    pl: 4,
-                    fontWeight: 'bold',
-                }}
-            >
-                {header}
-            </Typography>
+                    display: 'inline-block'
+                }}>
+                <Typography
+                    variant="h4"
+                    sx={{
+                        p: 2,
+                        pl: 4,
+                        fontWeight: 'bold',
+                    }}
+                >
+                    {header}
+                </Typography>
 
-            <Typography
-                variant="body1"
-                sx={{
-                    p: 2,
-                    pl: 4,
-                    fontSize: 20,
-                    fontWeight: 'medium',
-                    width: 500,
-                }}
-            >
-                {body}
-            </Typography>
-            <BannerButton
-                buttonLink={buttonLink}
-                externalLink={externalLink}
-                buttonText={buttonText}
-            />
+                <Typography
+                    variant="body1"
+                    sx={{
+                        p: 2,
+                        pl: 4,
+                        fontSize: 20,
+                        fontWeight: 'medium',
+                        width: 700,
+                    }}
+                >
+                    {body}
+                </Typography>
+                <BannerButton
+                    buttonLink={buttonLink}
+                    externalLink={externalLink}
+                    buttonText={buttonText}
+                />
+            </div>
         </Box>
+
     )
 }
 

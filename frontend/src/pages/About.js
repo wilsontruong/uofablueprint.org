@@ -10,7 +10,7 @@ function About() {
 
             <Grid item xs={12}>
                 <Banner 
-                    header='About Us' 
+                    header='About Us'
                     body='Making technology accessible and useful for those who create communities.'
                     buttonText='Learn more'
                     buttonLink="#missionGridItem"
